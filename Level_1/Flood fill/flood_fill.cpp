@@ -31,10 +31,15 @@ void flood_fill_pixel(char **tab, t_point size, t_point begin, char target)
 
 void  flood_fill(char **tab, t_point size, t_point begin)
 {
+	// Check if the beginning is inside the boundaries
 	if (begin.x >= 0 && begin.y >= 0 && begin.x < size.x && begin.y < size.y)
 	{
-		// If the selected point is inside the boundaries, call flood_fill_pixel to start
-		flood_fill_pixel(tab, size, begin, tab[begin.y][begin.x]);
+		// Check if the beginning is not the replace character 'F' to prevent infinite loop
+		if (tab[begin.y][begin.x] != 'F')
+		{
+			// call flood_fill_pixel to start
+			flood_fill_pixel(tab, size, begin, tab[begin.y][begin.x]);
+		}
 	}
 }
 
