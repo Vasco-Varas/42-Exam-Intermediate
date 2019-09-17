@@ -63,27 +63,27 @@ void print_area(char **tab, t_point size)
 	}
 }
 
-int main(void)
-{
-	t_point size = {8, 5};
-	t_point begin = {2, 2};
-
-	char line1[] = { '1', '1', '1', '1', '1', '1', '1', '1' };
-	char line2[] = { '1', '0', '0', '0', '1', '0', '0', '1' };
-	char line3[] = { '1', '0', '0', '1', '0', '0', '0', '1' };
-	char line4[] = { '1', '0', '1', '0', '0', '0', '0', '1' };
-	char line5[] = { '1', '1', '0', '0', '0', '0', '0', '0' };
-	char *zone[] = {
-			line1,
-			line2,
-			line3,
-			line4,
-			line5
-	};
-	print_area(zone, size);
-	printf("\n");
-	flood_fill(zone, size, begin);
-	print_area(zone, size);
-	return (0);
-}
+//int main(void)
+//{
+//	t_point size = {8, 5};
+//	t_point begin = {2, 2};
+//
+//	char line1[] = { '1', '1', '1', '1', '1', '1', '1', '1' };
+//	char line2[] = { '1', '0', '0', '0', '1', '0', '0', '1' };
+//	char line3[] = { '1', '0', '0', '1', '0', '0', '0', '1' };
+//	char line4[] = { '1', '0', '1', '0', '0', '0', '0', '1' };
+//	char line5[] = { '1', '1', '0', '0', '0', '0', '0', '0' };
+//	char *zone[] = {
+//			line1,
+//			line2,
+//			line3,
+//			line4,
+//			line5
+//	};
+//	print_area(zone, size);
+//	printf("\n");
+//	flood_fill(zone, size, begin);
+//	print_area(zone, size);
+//	return (0);
+//}
 
