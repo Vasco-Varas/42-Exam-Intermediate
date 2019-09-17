@@ -8,11 +8,15 @@
 
 void    print_doublon(int *a, int na, int *b, int nb)
 {
+	// location inside int array a and b
 	int pos_a = 0, pos_b = 0;
+	// keep track if it has already printed something so we can add space
 	int started = 0;
 
+	// While the positions are less than the length or the arrays
 	while (pos_a < na && pos_b < nb)
 	{
+		// If in the checking position, they are the same, print and find the next one
 		if (a[pos_a] == b[pos_b]) {
 			if (started == 1)
 				printf(" ");
@@ -21,8 +25,10 @@ void    print_doublon(int *a, int na, int *b, int nb)
 			pos_a++;
 			pos_b++;
 		}
+		// if the value on position b is less than the one on position a, increment on position b (only because arrays are sorted)
 		if (a[pos_a] > b[pos_b])
 			pos_b++;
+		// if the value on pos a is less than on pos b, increment pos b (only works because arrays are sorted)
 		if (a[pos_a] < b[pos_b])
 			pos_a++;
 	}
