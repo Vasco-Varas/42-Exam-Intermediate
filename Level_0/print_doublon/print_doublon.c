@@ -36,7 +36,7 @@ void    print_doublon(int *a, int na, int *b, int nb)
 
 // MAIN
 
-//int			main(int argc, char *argv[])
+//int 	main(int argc, char **argv)
 //{
 //	int a[] = { 100, 200, 300 };
 //	int b[] = { 1, 2, 3, 4 };

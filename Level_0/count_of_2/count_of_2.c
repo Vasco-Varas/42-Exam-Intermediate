@@ -44,7 +44,7 @@ int    count_of_2(int n)
 
 // MAIN
 
-//int			main(int argc, char *argv[])
+//int 	main(int argc, char **argv)
 //{
 //	if (argc == 2)
 //		printf("%i\n", count_of_2(atoi( argv[1] )));

@@ -30,7 +30,7 @@ int is_anagram(char *a, char *b)
 
 // MAIN
 
-//int			main(int argc, char *argv[])
+//int 	main(int argc, char **argv)
 //{
 //	char *a = "abcdef";
 //	char *b = "fabcde"; // result = 1
