@@ -3,7 +3,7 @@
 //
 
 #include "flood_fill.h"
-#include <cstdio>
+#include <stdio.h>
 
 void flood_fill_pixel(char **tab, t_point size, t_point begin, char target)
 {
