@@ -26,7 +26,7 @@ int find_pivot(int *arr, int n)
 	return (-1);
 }
 
-//int 		main(int argc, const char *argv[])
+//int 	main(int argc, char **argv)
 //{
 //	int arr[] = {-5, 10, 2, 5};
 //
